@@ -1,11 +1,10 @@
 import turtle  # allows for turtle graphics
 
 t = turtle.Turtle()
-t.speed(0)  # fastest — shapes appear quickly when you press a key
+t.speed(0)  # automatic speed
 
-# ---------------------------------------------------------------------------
-# Step 3: movement functions (pen up, no line while moving)
-# ---------------------------------------------------------------------------
+
+# movement functions (pen up, no line while moving)
 def move_right():
     t.penup()
     t.setheading(0)  # East
@@ -30,9 +29,7 @@ def move_down():
     t.fd(100)
 
 
-# ---------------------------------------------------------------------------
-# Step 7–8: drawing functions (pen down, draw at current position)
-# ---------------------------------------------------------------------------
+# drawing functions (pen down, draw at current position)
 def draw_square():
     t.pendown()
     t.color("black", "pink")
@@ -64,9 +61,7 @@ def draw_circle():
     t.penup()
 
 
-# ---------------------------------------------------------------------------
-# Step 4–6: screen + keyboard events
-# ---------------------------------------------------------------------------
+# screen + keyboard events
 screen = turtle.Screen()
 screen.title("Python Turtle Graphics")
 screen.listen()
