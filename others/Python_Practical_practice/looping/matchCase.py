@@ -1,6 +1,6 @@
 day = 1 # variable declaration
 
-match day:
+match day:  # match case statement
     case 1:
         print("Monday")
     case 2:
@@ -14,7 +14,7 @@ match day:
     case 6:
         print("Saturday")
 
-#____________________________or this is other way to do it
+# if elif statement
 
 day = 2
 
@@ -26,3 +26,8 @@ elif day == 3:
     print("Wednesday")
 else:
     print("Invalid")
+
+    # The difference between match case and if elif statement 
+    # match case good for matching pattern and values and specific case nad structure
+    # if/elif great for checking conditions  more flexible and complex situations
+    # addittional ideas mathc and if/elif had able to use string type
