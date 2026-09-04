@@ -31,3 +31,18 @@ else:
     # match case good for matching pattern and values and specific case nad structure
     # if/elif great for checking conditions  more flexible and complex situations
     # addittional ideas mathc and if/elif had able to use string type
+
+
+
+command = input("Enter a command: ")
+
+if command == "Start":
+    print("Game Start! ")
+elif command == "stop":
+    print("Game stopped! ")
+elif command == "help":
+    print("select Options ")
+elif command == "quit":
+    print("Quit")
+else:
+    print("Unknown Command")
