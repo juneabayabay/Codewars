@@ -47,7 +47,7 @@ elif command == "quit":
 else:
     print("Unknown Command")
 
-
+print()
 # convert into match case
 
 command = input("Enter a command: ")
@@ -63,3 +63,17 @@ match command:
     print("The game is Done!")
   case _:
     print("unknown command")
+
+# the temperature
+print()
+
+temperature = 7
+
+if temperature >= 29:
+  print("Hot Coffee")
+elif 20 <= temperature <= 29:
+  print("Warm coffee")
+elif 10 <= temperature <= 19:
+  print(" Cool coffee")
+else:
+  print("Cold Coffee")
