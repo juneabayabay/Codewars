@@ -1,3 +1,5 @@
+print("Match case method")
+
 day = 1 # variable declaration
 
 match day:  # match case statement
@@ -14,7 +16,11 @@ match day:  # match case statement
     case 6:
         print("Saturday")
 
+print()
+print("if/elif method")
+
 # if elif statement
+
 
 day = 2
 
@@ -32,7 +38,8 @@ else:
     # if/elif great for checking conditions  more flexible and complex situations
     # addittional ideas mathc and if/elif had able to use string type
 
-
+print()
+print("Challenge 1")
 
 command = input("Enter a command: ")
 
@@ -48,6 +55,7 @@ else:
     print("Unknown Command")
 
 print()
+print("Challegen 2")
 # convert into match case
 
 command = input("Enter a command: ")
@@ -64,8 +72,9 @@ match command:
   case _:
     print("unknown command")
 
-# the temperature
 print()
+print("Challenge 3")
+# the temperature
 
 temperature = 7
 
@@ -77,3 +86,22 @@ elif 10 <= temperature <= 19:
   print(" Cool coffee")
 else:
   print("Cold Coffee")
+
+
+print("")
+print("Challenge 4")
+print("match the string")
+
+command = "quit"
+
+match command:
+  case "save":
+    print("The command is already saved")
+  case "stop":
+    print("The command is already stop")
+  case "start":
+    print("The command is already stop")
+  case "load":
+    print("Loading wait for a moment")
+  case "quit":
+    print("exit")
