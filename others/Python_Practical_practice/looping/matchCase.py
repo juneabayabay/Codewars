@@ -46,3 +46,20 @@ elif command == "quit":
     print("Quit")
 else:
     print("Unknown Command")
+
+
+# convert into match case
+
+command = input("Enter a command: ")
+
+match command:
+  case "start":
+    print("Game started")
+  case "stop":
+    print("Game stopped")
+  case "help":
+    print("How can help you? ")
+  case ("quit"):
+    print("The game is Done!")
+  case _:
+    print("unknown command")
