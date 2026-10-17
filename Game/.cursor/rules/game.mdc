@@ -1,0 +1,28 @@
+---
+description: Build No Heroes Left from Documentation.md
+alwaysApply: true
+---
+
+# No Heroes Left
+
+`Documentation.md` is the source of truth. Story explains the moment. SPECs say what the build must do. Events are the only facts that change a match.
+
+When asked to write or change game code:
+
+- Implement one SPEC at a time, then stop so it can be run.
+- Keep this tick order: read input, accept or reject commands, emit events, run handlers, store state, draw.
+- Drawing reads state and emits nothing.
+- Match phase only moves BOOT → COUNTDOWN → LIVE → RESOLVED.
+- A resolved match stays resolved until `StartMatch`.
+- Do not invent rules, characters, or systems that the document does not name.
+- Do not edit `Documentation.md` unless asked.
+
+```python
+# Bad: drawing changes health
+def draw(screen, state):
+    state.health -= 1
+
+# Good: a handler emits an event, then draw only reads state
+def on_strike(state, event):
+    return [HealthChanged(fighter=event.target, amount=-event.damage)]
+```
